@@ -3,7 +3,7 @@
     --bgColor2: #ffffff;
     --bgColor3: #dae6ec;
 }
-.container {
+body {
     height: 100vh;
     width: 100vw;
     box-sizing: border-box;
