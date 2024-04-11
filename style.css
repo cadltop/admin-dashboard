@@ -24,6 +24,8 @@ body {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     background-color: var(--bgColor2);
+    display: grid;
+    grid-template: 1fr 2fr / 2fr 1fr;
 }
 
 .main {
