@@ -7,6 +7,10 @@
     font-family: Roboto;
     src: url(./resources/roboto/Roboto-Regular.ttf);
 }
+ul {
+    list-style: none;
+    padding-left: 0;
+}
 
 body {
     height: 100vh;
