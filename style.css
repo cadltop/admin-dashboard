@@ -38,19 +38,20 @@ body {
     grid-template: 1fr 2fr / 2fr 1fr;
 }
 
+.header > * {
+    align-items: center;
+}
+
 .search {
     grid-template-columns: 1fr 7fr;
-    align-items: center;
 }
 
 .user-info {
     grid-template-columns: 1fr 1fr 2fr;
-    align-items: center;
 }
 
 .welcome-message {
     grid-template: 1fr 1fr / 1fr 6fr;
-    align-items: center;
 }
 
 .welcome-message > .profile {
@@ -59,7 +60,6 @@ body {
 
 .buttons {
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;
     column-gap: 50px;
 }
 
