@@ -3,12 +3,18 @@
     --bgColor2: #ffffff;
     --bgColor3: #dae6ec;
 }
+@font-face {
+    font-family: Roboto;
+    src: url(./resources/roboto/Roboto-Regular.ttf);
+}
+
 body {
     height: 100vh;
     width: 100vw;
     box-sizing: border-box;
     display: grid;
     grid-template: 1fr 5fr / 1fr 4fr;
+    font-family: Roboto;
 }
 
 .sidebar {
