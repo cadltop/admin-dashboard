@@ -34,23 +34,38 @@ body {
 }
 
 .sidebar {
-    padding: 30px 30px;
+    padding-left: 40px;
+    padding-top: 10px;
     grid-row: 1 / 3;
     grid-column: 1 / 2;
     background-color: var(--bgColor1);
-    grid-template-rows: 50px 250px 150px;
-    gap: 15px;
+    grid-template-rows: 75px 315px 185px;
     font-size: 20px;
     font-weight: bold;
     color: var(--bgColor2);
 }
-.dashboard {
-    font-size: 30px;
+
+.dashboard, .nav-bar1 li, .nav-bar2 li {
+    display: grid;
+    align-items: center;
 }
 
-.sidebar > ul > li {
-    align-items: center;
-} 
+.dashboard {
+    font-size: 30px;
+    grid-template-columns: 1fr 4fr;
+    align-content: center;
+}
+
+.dashboard .icon {
+    height: 50px;
+    width: auto;
+}
+
+.nav-bar1 li, .nav-bar2 li {
+    height: 45px;
+    grid-template-columns: 1fr 5fr;
+    align-content: center;
+}
 
 .header {
     grid-row: 1 / 2;
