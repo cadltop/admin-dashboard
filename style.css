@@ -81,6 +81,7 @@ body {
     grid-template: 1fr 2fr / 1.75fr 1fr;
     padding: 15px 50px;
     column-gap: 20px;
+    row-gap: 15px;
 }
 
 .header > * {
@@ -137,7 +138,17 @@ body {
 
 .buttons {
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 50px;
+    column-gap: 40px;
+    padding: 25px;
+}
+.buttons > * {
+    height: 45px;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: var(--bgColor2);
+    background-color: var(--bgColor1);
+    color: var(--bgColor2);
+    font-weight: bold;
 }
 
 .main {
