@@ -82,6 +82,7 @@ body {
 
 .header > * {
     align-items: center;
+    border: 2px red solid;
 }
 
 .search {
@@ -98,12 +99,18 @@ body {
 }
 
 .user-info {
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 30px 50px 1fr; 
+    padding-left: 25%;
+    column-gap: 30px;
 }
 
 .user-info .profile {
     height: auto;
     width: 50px;
+}
+
+.user-info p {
+    min-width: 150px;
 }
 
 .welcome-message {
