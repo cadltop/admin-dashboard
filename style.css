@@ -154,10 +154,18 @@ body {
 }
 
 .main {
+    padding-left: 25px;
+    padding-right: 30px;
+    padding-top: 25px;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     background-color: var(--bgColor3);
     grid-template: repeat(2, 1fr) / 2fr 1fr;
+    column-gap: 25px;
+}
+
+.main > div > div, .main > div > ul {
+    background-color: var(--bgColor2);
 }
 
 .projects {
