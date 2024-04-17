@@ -154,14 +154,13 @@ img.profile {
 }
 
 .main {
-    padding-left: 25px;
-    padding-right: 30px;
-    padding-top: 25px;
+    padding: 25px 25px;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     background-color: var(--bgColor3);
-    grid-template: repeat(2, 1fr) / 2fr 1fr;
+    grid-template: repeat(2, 0.5fr) / 3fr 1fr;
     column-gap: 25px;
+    height: fit-content;
 }
 
 .main > div > div, .main > div > ul {
@@ -183,9 +182,10 @@ img.profile {
 
 .projects {
     grid-row: 1 / 3;
-    grid-template: auto repeat(3, 4fr) / repeat(2, 1fr);
+    grid-template: auto repeat(3, 1fr) / repeat(2, 1fr);
     row-gap: 25px;
     column-gap: 25px;
+    height: fit-content;
 }
 
 .projects div .title {
@@ -206,6 +206,7 @@ img.profile {
     display: grid;
     grid-template-rows: auto 1fr 40px;
     border-left: 10px solid rgb(255, 196, 0);
+    height: fit-content;
 }
 
 .project > * {
@@ -213,7 +214,8 @@ img.profile {
 }
 
 .project .subtitle {
-    padding-right: 10px;
+    padding-right: 5px;
+    height: 125px;
 }
 
 .actions {
@@ -227,9 +229,14 @@ img.profile {
     grid-template-rows: 1fr 11fr;
 }
 
-.announcement-list, .account-list {
+.announcement-list {
     position: relative;
-    top: -5px;
+    top: -20px;
+    padding: 40px 40px;
+    height: fit-content;
+}
+
+.account-list {
     padding: 40px 40px;
     height: fit-content;
 }
@@ -254,6 +261,7 @@ img.profile {
     grid-template-columns: 1fr 3fr;
     align-items: center;
 }
+
 .account-list > li .profile {
     height: auto;
     width: 50px;
